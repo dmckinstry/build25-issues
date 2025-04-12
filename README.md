@@ -8,9 +8,10 @@
 - Alternative:   We have to work in public user-owned accounts
   - Can fork from a source OSS repo
   - Source will have appropriate automation to seed issues, projects, Labels, etc. which must be manually executed
+  - Apparently Issue Types aren't available in non-GHE?
   - We will either need to add steps (bonus) for cross-project collaboration or exclude it
   - Copied/forked repo will include appropriate templates, automation, and other code artifacts
- 
+
 ## Lab
 1. Setup
    - Ensure VM and GitHub account access
@@ -27,7 +28,7 @@
      - Purpose: Build out a hierarchy of both new and existing child items (tasks)
      - Create a new child issue - related to the next step in your Batch issue
        - Type=Task (may want to make this a post-creation step to show muteability), some template, based on the next step in the lab
-   - ?? Possibly something with Labels and Milestones?  This is an important aspect of issues but don't want to dwell too long.
+   - ?? Possibly something with Labels and Milestones? This is an important aspect of issues but don't want to dwell too long.
 3. Project Fundamentals
     - Create a new project
       - Purpose=TBD, template=TBD
@@ -49,3 +50,19 @@
    - TBD
 x. Possible: At the end, go to the shared board and change a custom field on that board that doesn't exist in the lab boards - need to verify permissions, etc.
 x. Anything else?
+
+---
+Issue Hierarchy (* == manually added)
+- Build 2025 Lab 302 EPIC [in a separate project as a parent for all participating batches]
+  - [2.2-Batch*] @user uses GitHub Issues
+    - [2.1-Task*] Investigate issue basics <-- can setup a template JUST for this item
+      - Checklist: Using Issue Templates, Markdown, Labels, Milestones, Querying Issues, Verify lab automation
+      - Run automation for creating issues???  or trigger based on creation of this issue?
+    - [2.2-Task] Add structure to Issues
+      - Checklist: Types, Hierarchy
+
+- [Batch] Post-build follow-up resources
+   - [No type] GitHub Issues reference material
+   - [No Type] GitHub Projects reference material
+   - [No Type] GitHub Issues & Projects automation (CLI, API)
+   

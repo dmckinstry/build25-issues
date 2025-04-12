@@ -2,7 +2,6 @@ on:
   workflow_dispatch:
     inputs:
       command:
-        description: ''
         required: false
         type: choice
         options:
@@ -12,6 +11,6 @@ jobs:
   seed_issues:
     runs-on: ubuntu-latest
     steps:
-    - run: ./.github/scripts/ $OPTION
+    - run: ./.github/scripts/prepare-lab-env.sh $OPTION
       env:
         OPTION: ${{ inputs.command }}
