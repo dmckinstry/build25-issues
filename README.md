@@ -1,6 +1,6 @@
 # Issued & Projects lab - Build 2025
 
-Assumptions:
+## Assumptions
 - Proposed: We work in an exising GHE org that we can easily add users to and they can create/fork/... a repo and create projects
   - We have seeded some appropriate cross-project issues, projects, ...
   - We can easily seed Labels, Issues, etc., in their "forked" repo through some automation
@@ -11,7 +11,7 @@ Assumptions:
   - We will either need to add steps (bonus) for cross-project collaboration or exclude it
   - Copied/forked repo will include appropriate templates, automation, and other code artifacts
  
-
+## Lab
 1. Setup
    - Ensure VM and GitHub account access
    - Copy/Fork source repo
