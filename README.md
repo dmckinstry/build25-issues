@@ -10,6 +10,8 @@ Assumptions:
   - Source will have appropriate automation to seed issues, projects, Labels, etc. which must be manually executed
   - We will either need to add steps (bonus) for cross-project collaboration or exclude it
   - Copied/forked repo will include appropriate templates, automation, and other code artifacts
+ 
+
 1. Setup
    - Ensure VM and GitHub account access
    - Copy/Fork source repo
