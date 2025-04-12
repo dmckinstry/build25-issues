@@ -9,7 +9,7 @@ fi
 
 # If "--seed" is passed as an argument, automatically create issues that are meant to be manually created
 if [[ "$1" == "--seed-all" ]]; then
-  gh issue create --template "Build Lab-Issue Basics template" \
+  gh issue create \
     --title "Investigate Issue Basics" \
     --body "
 # Issue Basics
