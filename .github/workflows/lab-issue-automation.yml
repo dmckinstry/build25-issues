@@ -1,0 +1,17 @@
+on:
+  workflow_dispatch:
+    inputs:
+      command:
+        description: ''
+        required: false
+        type: choice
+        options:
+        - --delete
+        - --seed-all
+jobs:
+  seed_issues:
+    runs-on: ubuntu-latest
+    steps:
+    - run: ./.github/scripts/ $OPTION
+      env:
+        OPTION: ${{ inputs.command }}
