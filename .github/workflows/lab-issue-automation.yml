@@ -19,6 +19,6 @@ jobs:
     steps:
     - run: ./prepare-lab-env.sh $OPTION
       shell: bash
-      working-directory: ./buid25-issues/.github/scripts
+      working-directory: .github/scripts
       env:
         OPTION: ${{ inputs.command }}
