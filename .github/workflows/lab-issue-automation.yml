@@ -17,6 +17,8 @@ jobs:
   seed_issues:
     runs-on: ubuntu-latest
     steps:
-    - run: ls
+    - run: ./prepare-lab-env.sh $OPTION
+      shell: bash
+      working-directory: ./buid25-issues/.github/scripts
       env:
         OPTION: ${{ inputs.command }}
