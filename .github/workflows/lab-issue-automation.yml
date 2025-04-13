@@ -17,6 +17,7 @@ jobs:
   seed_issues:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v4.2.2
     - run: ./prepare-lab-env.sh $OPTION
       shell: bash
       working-directory: .github/scripts
