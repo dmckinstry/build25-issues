@@ -1,4 +1,4 @@
-# Workshop setup
+## Workshop setup
 >>>NOTE - This model setups up in an user org - we need to run in a GHE to get Issue Types.
 
 To complete this workshop you will need to create a repository for your personal work.  This is accomplished through the use of a [template repository][template-repo]. Template repositories are a great way to provide starters for your organization, ensuring consistency across projects. The repository for this workshop is configured as a template, so we can use it to create your repository.
