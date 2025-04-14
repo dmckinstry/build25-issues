@@ -8,10 +8,10 @@ on:
         options:
         - --delete
         - --seed-all
-  # Automatic run when this is first created from a template
-  push:
-    branches:
-      - main
+  # # Automatic run when this is first created from a template
+  # push:
+  #   branches:
+  #     - main
 
 permissions: 
   issues: write
