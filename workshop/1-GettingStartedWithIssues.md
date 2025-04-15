@@ -18,4 +18,3 @@ _In this section you'll learn the basics of GitHub issues, including issue creat
 - [ ] Apply the "feature request" label to your new issue.
 - [ ] Apply the "tbd" milestone to your new issue.
 - [ ] Query issues to find and filter this issue and others in your repo.
-- [ ] Verify automation triggered by issues
