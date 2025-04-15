@@ -13,7 +13,6 @@ _In this section you'll learn the basics of GitHub issues, including issue creat
         <li>Click the green <b>Create</b> button near the bottom of the window.  The template you selected already had everything filled out so you dont' need to make any changes.</li> 
       </ol>
     </details>
-
 - [ ] Assign the new issue to yourself.
       <details><summary>Step details</summary>
       <ol>
