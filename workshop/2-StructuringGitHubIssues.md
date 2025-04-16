@@ -8,7 +8,7 @@ _Most development teams need more than simple issues to manage development proce
     - You'll need to enter the title "Apply structure to GitHub Issues"
     - If you'd like to practice your Markdown, you can optionally enter a description
   - Notice that at the bottom of the form there are buttons such as **Assignee**, **Label**, etc.  Click the **Assignee** button and assign it to yourself. Again, click outside to popup menu to dismiss it.  This is an alternate way from the last exercise to set issue data during the creation process.
-  - Repeat the process to set the **Type** to Task. Note that Issue Types are available in GitHub Enterprise but not currently in all other versions of GitHub.com.
+  - Repeat the process to set the **Type** to Task. Note that Issue Types are available in [GitHub organization accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts) but not User accounts.
   - Click the green **Create** to complete the creation process.
 - [ ] Locate the "Learning GitHub Issues Feature" issue, change it's type to Feature.
   - Select Issues in the top nav to return to the Issues list. You can add the text "Learning" to the filter text to do a text search for the issue (i.e., `is:issue state:open Learning`).
