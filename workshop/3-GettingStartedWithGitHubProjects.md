@@ -2,7 +2,6 @@
 _GitHub Projects project a management layer on top of Issues, providing custom fields, custom workflows, visualizations, automation, and ...TBD... In this exercise we'll investigate creating projects, adding issues, adding drafts, adding fields, and customizing workflow status.
 
 ### Project Fundamentals
-
 - [ ] Create a new project with a name that you'll recognize (e.g., "Dave's lab project"), starting from scratch with a Table.
   - Click on **Projects** in the GitHub top nav.
   - Click on the **+ New project** green button on the right side above the (likely empty) project list.
@@ -22,13 +21,25 @@ _GitHub Projects project a management layer on top of Issues, providing custom f
   - In the top of the form, select **Select all items**
   - Click the green **Add selected items** button in the lower-right of the form.
   - Click outside the "Add items to project" form to close it.
-
-- [ ] Repeat the above process to add the "Add Structure to Issues" and "Batch to track learning GitHub Issues" issues to the project
-- [ ] Add a draft item named "TBD" to the project; drafts do not have a backing issue and have fewer capabilities but are easier to work with and not tied to an individual repo.
-  - Next to the "+" at the bottom of the table, type the title "This is a draft item on the project"
-  - Note the popup menu including "Create a draft".  You can select on that menu item or press Control (or Command for mac) and Return/Enter.
+- [ ] Add a draft item named "Investigate draft issues" to the project; drafts do not have a backing issue and have fewer capabilities but are easier to work with and not tied to an individual repo.
+  - Click in the textbox next to the "+" at the bottom of the table.  If your repo is listed, you'll need to delete it before proceeding.
+  - Type the title "Investigate draft issues"
+  - Note that the popup menu has the option to **Create a draft issue**. You can click that button or press Control (or Command) + Return/Enter to create the draft.
+  - Note the popup menu including **Create a draft**.  Select that item on that menu item or press Control (or Command for mac) and Return/Enter.
     The draft has been added.  It can be modified or removed, like any other item in the project, or converted into an issue.
 
 ### Customize Status and Fields
-- tbd - States and Fields??
-- Draft items
+- [ ] Add a new **Single select** project field for "Priority"
+  - Locate and click on the **+** in the header row of the far right column of the table, and select **+ New field**.
+  - Enter "Priority" as the "Field name" and select "Single select" as the "Field type".
+  - In the "Add option.." textbox, enter `:fire: High` and click the **Add** button.
+  - Repeat adding options for `:yellow_circle: Medium` and `:ice_cube: Not going to happen`.
+  - Click the green **Save** button to add the field.
+- [ ] Repeat the process above to add Date fields for "Start" and "End".
+  - As stated, the process is identify except that the names are different and the **Date* type doesn't require additional "Add option..." steps.
+- [ ] Add a new Status for "Paused"
+  - In the table header, click on the elipses **...** next to the "Status" header.
+  - Click on the **Field settings** option.
+  - In the **Add option...** textbox type `Paused` and click the **Add** button.
+  - If you'd like to change the item's color or add a description, you can do that by clicking the elipses **...** to the right of the item.
+  - In the top left of the screen, locate and click the **<-- Settings** button to return to the project view.
