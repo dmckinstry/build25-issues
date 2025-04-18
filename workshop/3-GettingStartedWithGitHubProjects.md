@@ -28,6 +28,8 @@ _GitHub Projects project a management layer on top of Issues, providing custom f
   - Note the popup menu including **Create a draft**.  Select that item on that menu item or press Control (or Command for mac) and Return/Enter.
     The draft has been added.  It can be modified or removed, like any other item in the project, or converted into an issue.
 
+<!-- Possibly add something for manipulating projects from within the issues -->
+
 ### Customize Status and Fields
 - [ ] Add a new **Single select** project field for "Priority"
   - Locate and click on the **+** in the header row of the far right column of the table, and select **+ New field**.
