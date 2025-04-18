@@ -1,51 +1,52 @@
 ## Working with Project Views
 _One of the valuable components in Projects is the ability to customize how you view and interact with a group of related work. In this exercise we will filter, slice, and create a variety of different project views._
 
-### Filtering and Project Data
+### Filter Project Data
 If you're not already, get the the project board and the default view.
 - [ ] Rename the first view as "Feature Planning"
-- [ ] Add a filter to only show opem issues with the "Feature" type
-- [ ] 
+  - Locate the tab with the default name "View 1"
+  - Double-click on the **View 1** text; delete the existing name and replace it with the title "Feature Planning"
+- [ ] Add a filter to only show "Feature" and "Bug" type issues that aren't "Done"
+  - In the filter textbox with the magnifying glass icon (image), enter the text `Type:Bug,Feature -status:Done`.  Note that dash is used to indicate the Boolean logical "not". 
+  - Click the green **Save** button to the right of the filter textbox to save your changes. 
+
+### Add a Release Roadmap view
+- [ ] Populate Feature issues with priorities and dates; using the existing "Feature Planning" view, set the Priority, Start and End dates in the grid as:
+  "Learning GitHub Issues...", High Priority, May 12-May 16, 2025
+  "Exercise Project Fudamentals", Medium Priority, May 15-May 21, 2025
+  "README has a typo", Medium Priority, May 21-May 23, 2025
+- [ ] Duplicate the current view with the name "Release Roadmap", the type "Roadmap", scaled to "Quarter" and sorted by "End"
+  - In the tab for the "Feature Planning" view, click the down arrow button
+  - Click on **Duplicate view**
+  - Double-click on the new view tab title (e.g., "View 2") and rename it to "Release Roadmap"
+  - Click the down arrow button in the new "Release Roadmap" view and select the Roadmap button (image) at the top-right of the popup
+  - Change the **Month** scaling button (image) to Quarter so that you can see a longer timeline
+  - Change the **Sort** button (image) to use the End date
+  - Click the green **Save**
+- [ ] Adjust release dates
+  - Drag the "Exercise Project Fundamentals" issue so that it starts immediately after the "Learn GitHub Issues Batch" is complete.
+  - Drag the right side (end) of the "README has a typo" issue so that it is only one day
+  - Hit the **+** button next to "Add a Release Roadmap View" issue; drag and stretch the issue so that it is a few days duration, starting after the "README has a typo" issue
+
+### Add a Board view for tasks
+- [ ] Add a new view named "Task Board" with the type "Board", filtered on task issues
+  - Click the **+ New view** button next to the "Release Roadmap" tab and rename the new tab to "Tasks"
+  - In the "Filter by keyword or by field" textbox enter `Type:Task`
+- [ ] Add a "Parent issue" slicer, group by "Assignee", and add "Labels" to the fields
+  - Click the down arrow button on the "Tasks" tab, click on **Slice by:** button, and select **Parent issue"
+  - Repeat the process to add a **Group by:** with the value **Assignee**
+  - Repeat the process, selecting **Fields:** and adding the **Label** field
+  - Click the green **Save** button to save changes
+- Verify board interactions
+  - Drag one of the issues from the "No Assignees" group into your aassignee ; verify that it is now assigned to you, as evidenced but the icon on the top-right of that card
+  - Click on the "Learning GitHub Issues" parent isse; verify that it filters down to only show the two child issues assigned to that parent
+  - Click on that parent issue again, or click on **deselect** in the slicer, and verify that all cards are shown again
+  - Drag the "Investigate Issue Basics" issue to the "Done" column
+    - Verify that the **Learning GitHub Issues Batch** in the Parent issue has been updated to show "2 / 3" or 66% complete.
+    - Verify that the icon in the "Done" card has changed from an open issue (image) to closed (image)
+  NOTE: The fact that the issue was closed when it was dragged to "Done" was not through magic; it was though automation which we'll investigate next!
 
 
-- [ ] Create a new project with a name that you'll recognize (e.g., "Dave's lab project"), starting from scratch with a Table.
-  - Click on **Projects** in the GitHub top nav.
-  - Click on the **+ New project** green button on the right side above the (likely empty) project list.
-  - Review the "Featured" templates in the "Create project" dialog, but don't select one. Instead, select **Table** on the left side under "Start from scratch".
-  - Give the title a "Project name" that you'll recognize (e.g., "Dave's workshop project").
-  - Click the green **Create project** button on the lower-right of the form. 
-- [ ] Add a new Task Issue to the project in your repo, using the "Blank Issue" template and with the title "Customize Project Status and Fields"
-  - Next to the "+" at the bottom of the table, type the title "Customize Project Status and Fields"
-  - Press Return/Enter to accept the title
-  - Verify that your repo is selected and select "Blank Issue" as the template
-  - At the bottom of the form, select "Task" as the type
-  - Click the Create button to save the new issue.
-- [ ] Add all of the remaining issues in your repo to the project
-  - Next to the "+" at the bottom of the table, type the hash symbol (#) to open the repo selector.
-  - Click on your repo name.
-  - At the bottom of the popup list, select "Add items from *your-org/your repo*".
-  - In the top of the form, select **Select all items**
-  - Click the green **Add selected items** button in the lower-right of the form.
-  - Click outside the "Add items to project" form to close it.
-- [ ] Add a draft item named "Investigate draft issues" to the project; drafts do not have a backing issue and have fewer capabilities but are easier to work with and not tied to an individual repo.
-  - Click in the textbox next to the "+" at the bottom of the table.  If your repo is listed, you'll need to delete it before proceeding.
-  - Type the title "Investigate draft issues"
-  - Note that the popup menu has the option to **Create a draft issue**. You can click that button or press Control (or Command) + Return/Enter to create the draft.
-  - Note the popup menu including **Create a draft**.  Select that item on that menu item or press Control (or Command for mac) and Return/Enter.
-    The draft has been added.  It can be modified or removed, like any other item in the project, or converted into an issue.
 
-### Customize Status and Fields
-- [ ] Add a new **Single select** project field for "Priority"
-  - Locate and click on the **+** in the header row of the far right column of the table, and select **+ New field**.
-  - Enter "Priority" as the "Field name" and select "Single select" as the "Field type".
-  - In the "Add option.." textbox, enter `:fire: High` and click the **Add** button.
-  - Repeat adding options for `:yellow_circle: Medium` and `:ice_cube: Not going to happen`.
-  - Click the green **Save** button to add the field.
-- [ ] Repeat the process above to add Date fields for "Start" and "End".
-  - As stated, the process is identify except that the names are different and the **Date* type doesn't require additional "Add option..." steps.
-- [ ] Add a new Status for "Paused"
-  - In the table header, click on the elipses **...** next to the "Status" header.
-  - Click on the **Field settings** option.
-  - In the **Add option...** textbox type `Paused` and click the **Add** button.
-  - If you'd like to change the item's color or add a description, you can do that by clicking the elipses **...** to the right of the item.
-  - In the top left of the screen, locate and click the **<-- Settings** button to return to the project view.
+
+  

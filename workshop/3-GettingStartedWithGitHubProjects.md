@@ -1,15 +1,15 @@
 ## Managing work with GitHub Projects
 _GitHub Projects project a management layer on top of Issues, providing custom fields, custom workflows, visualizations, automation, and ...TBD... In this exercise we'll investigate creating projects, adding issues, adding drafts, adding fields, and customizing workflow status.
 
-### Project Fundamentals
+### Exercise Project Fundamentals
 - [ ] Create a new project with a name that you'll recognize (e.g., "Dave's lab project"), starting from scratch with a Table.
   - Click on **Projects** in the GitHub top nav.
   - Click on the **+ New project** green button on the right side above the (likely empty) project list.
   - Review the "Featured" templates in the "Create project" dialog, but don't select one. Instead, select **Table** on the left side under "Start from scratch".
   - Give the title a "Project name" that you'll recognize (e.g., "Dave's workshop project").
   - Click the green **Create project** button on the lower-right of the form. 
-- [ ] Add a new Task Issue to the project in your repo, using the "Blank Issue" template and with the title "Customize Project Status and Fields"
-  - Next to the "+" at the bottom of the table, type the title "Customize Project Status and Fields"
+- [ ] Add a new Task Issue to the project in your repo, using the "Blank Issue" template and with the title "Add an issue from the project board"
+  - Next to the "+" at the bottom of the table, type the title "Add an issue from the project board"
   - Press Return/Enter to accept the title
   - Verify that your repo is selected and select "Blank Issue" as the template
   - At the bottom of the form, select "Task" as the type
