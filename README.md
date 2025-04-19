@@ -1,4 +1,4 @@
-# Issued & Projects lab - Microsoft Build 2025
+# Issued & Projects lab - MS Build 2025
 
 ## Assumptions
 - Proposed: We work in an exising GHE org that we can easily add users to and they can create/fork/... a repo and create projects
